@@ -27,11 +27,11 @@ _session = requests.session()
 #======================================================================================
 botStart = time.time()
 #======================================================================================
-ghi = LINE("gmail","pass")
+ghi = LINE()
 ghi.log("Auth Token : " + str(ghi.authToken))
 ghi.log("Timeline Token : " + str(ghi.tl.channelAccessToken))
 
-print(*SUCCES LOGIN TO NAUGHTY FINGER*)
+print("SUCCES LOGIN TO NAUGHTY FINGER")
 
 waitOpen = codecs.open("Max2.json","r","utf-8")
 settingsOpen = codecs.open("max.json","r","utf-8")
