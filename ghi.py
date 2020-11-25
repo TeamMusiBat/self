@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*- 
 from linepy import *
 from liff.ttypes import LiffChatContext, LiffContext, LiffSquareChatContext, LiffNoneContext, LiffViewRequest
 from akad.ttypes import Message
@@ -27,9 +28,9 @@ _session = requests.session()
 #======================================================================================
 botStart = time.time()
 #======================================================================================
-ghi = LINE()
-ghi.log("Auth Token : " + str(ghi.authToken))
-ghi.log("Timeline Token : " + str(ghi.tl.channelAccessToken))
+ghi = LINE("Email","password",appName="CHROMEOS\t2.3.8\tChrome OS\t1")
+#ghi.log("Auth Token : " + str(ghi.authToken))
+#ghi.log("Timeline Token : " + str(ghi.tl.channelAccessToken))
 
 print("SUCCES LOGIN TO NAUGHTY FINGER")
 
